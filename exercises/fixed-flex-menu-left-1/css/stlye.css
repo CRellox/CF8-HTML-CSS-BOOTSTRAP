@@ -1,0 +1,102 @@
+:root {
+  --navy: #002e94;
+  --wedding: #ffe7cc;
+  --beige: #e1ceb5;
+  --grey: #278627;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  flex: 25%;
+}
+
+main {
+  flex: 75%;
+  height: 100vh;
+  overflow: auto;
+}
+
+/* Displays */
+.d-flex {
+  display: flex;
+}
+
+.d-block {
+  display: block;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+/* Colors */
+.bg-grey {
+  background-color: var(--grey);
+}
+
+.bg-navy {
+  background-color: var(--navy);
+}
+
+.text-wedding {
+  color: var(--wedding);
+}
+
+.bg-beige {
+  background-color: var(--beige);
+}
+
+/* Margins & Paddings */
+.p-1 {
+  padding: 1rem;
+}
+
+.mt-1 {
+  margin-top: 1rem;
+}
+
+.mb-1 {
+  margin-bottom: 1rem;
+}
+
+.ms-1 {
+  margin-left: 1rem;
+}
+
+
+.mb-50 {
+  margin-bottom: 50px;
+}
+
+/* Fonts & Texts */
+.text-none {
+  text-decoration: none;
+}
+
+.link-hover-blue {
+  background-color: var(--navy)
+}
+
+.text-center {
+  text-align: center;
+  margin-top: 10px;
+}
+
+@media (max-width: 992px) {
+  .flex-row {
+    flex-direction: column;
+  }
+}

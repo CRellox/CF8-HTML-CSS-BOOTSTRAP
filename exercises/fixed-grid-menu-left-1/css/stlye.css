@@ -1,0 +1,164 @@
+:root {
+  --navy: #002E94;
+  --wedding: #FFE7CC;
+  --beige:#E1CEB5;
+  --grey: #36383F;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* header {
+  flex: 25%;
+} */
+
+main {
+  /* flex: 75%; */
+  height: 100vh;
+  overflow: auto;
+  margin-top: 100px;
+}
+
+/* Displays */
+.d-flex {
+  display: flex;
+}
+
+.d-grid {
+  display: grid;
+  grid-template-columns: 25% 75%;
+}
+
+.d-block {
+  display: block;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+/* Bars and X Styling */
+.side-menu:checked ~ label > .humb {
+  display: none;
+}
+
+.side-menu:checked ~ label > .humb-x {
+  display: block;
+}
+
+.side-menu:checked ~ nav {
+  display: block;
+}
+
+.side-menu {
+  display: none;
+}
+
+.humb {
+  position: absolute;
+  top: 3rem;
+  right: 2rem;
+  display: none;
+}
+
+.humb-x {
+  position: absolute;
+    top: 3rem;
+    right: 2rem;
+    display: none;
+}
+
+/* Colors */
+.bg-navy {
+  background-color: var(--navy);
+}
+
+.bg-grey {
+  background-color: var(--grey);
+}
+
+.bg-beige {
+  background-color: var(--beige);
+}
+
+.text-wedding {
+  color: var(--wedding);
+}
+
+/* Margins & Paddings */
+.p-1 {
+  padding: 1rem;
+}
+
+.mt-1 {
+  margin-top: 1rem;
+}
+
+.mb-1 {
+  margin-bottom: 1rem;
+}
+
+.ms-1 {
+  margin-left: 1rem;
+}
+
+.mb-50 {
+  margin-bottom: 50px;
+}
+
+/* Fonts & Texts */
+.text-none {
+  text-decoration: none;
+}
+
+.link-hover-blue:hover {
+  background-color: blue;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* Images */
+.banner-image {
+  width: 300px;
+  height: auto;
+  border-radius: 10%;
+}
+
+@media (max-width:992px) {
+  .flex-row {
+    flex-direction: column;
+  }
+  .d-grid {
+    grid-template-columns: 100%;
+  }
+
+  header {
+    position: fixed;
+    width: 100%;
+  }
+  
+  main {
+    margin-top: 250px;
+  }
+
+  .humb {
+    display: block;
+  }
+
+  nav {
+    display: none;
+  }
+}
